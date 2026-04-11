@@ -11,6 +11,7 @@ const connectDB = async () => {
         process.exit(1); //this prevents the server from starting if the db is unavailable
     }
 }
-// nothing to commit today , my bad
+
+
 
 export default connectDB;
