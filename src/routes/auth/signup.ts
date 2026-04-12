@@ -31,5 +31,5 @@ const SignUp = async (req: Request , res: Response) => {
         })
     }
     
-    
+    //what to add
 }
