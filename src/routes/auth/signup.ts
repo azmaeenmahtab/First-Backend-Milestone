@@ -1,8 +1,10 @@
 import pool from "../../db/connection.js";
 import type { Request, Response } from "express";
+import { Router } from "express";
 
+const authsignuprouter = Router();
 
-const SignUp = async (req: Request , res: Response) => {
+authsignuprouter.post("/signup", async (req: Request , res: Response) => {
 
     const {name, email, phone , password} = req.body; 
 
@@ -31,5 +33,7 @@ const SignUp = async (req: Request , res: Response) => {
         })
     }
     
-    //what to add
-}
+ })
+
+
+ export default authsignuprouter;
