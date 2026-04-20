@@ -11,3 +11,6 @@ const pool = new Pool({
 })
 
 export default pool;
+
+
+//this connection method is called postgresql connection pool using pg driver 

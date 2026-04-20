@@ -18,13 +18,13 @@ export const signupController = async (req: Request, res: Response) => {
 
         if(err instanceof Error && err.message == "ALL_FIELDS_REQUIRED"){
             return res.status(400).json({
-                message: "all fields required"
-            })
+                message: "all fields required",
+             })
 
          }
 
         return res.status(500).json({
             message: "error occured, cant create user",
-         })
+          })
     }
 }

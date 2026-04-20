@@ -31,5 +31,6 @@ export const signupServie = async ({name, email, phone, password}:SignUpInput):P
         
         console.log("error : " , err);
         throw new Error("signup failed, internal error occured" );
+        
     }
 }
